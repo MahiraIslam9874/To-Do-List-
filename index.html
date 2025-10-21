@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SM High Tech Industrial Engineering Care - To-Do List</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <button id="theme-switcher">
+        <i class="fas fa-moon" id="theme-icon"></i> 
+    </button>
+
+    <header class="header-info">
+        <h1>SM High Tech Industrial Engineering Care</h1>
+        <h2>Web Development</h2>
+        <h3>Submitted To: Abdullah Al Mamun</h3>
+        <p class="submit-by">Submit By: 
+            <a href="https://mahiraislam9874.github.io/Portfolio-Profile-/" target="_blank">
+                <strong id="animated-name">Máhîrä Îslâm</strong>
+            </a>
+        </p>
+    </header>
+
+    <main>
+        <form id="toDoForm" class="input-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="text" id="polytechnic" placeholder="Your Polytechnic" required>
+            <input type="number" id="classNo" placeholder="Class No." required>
+            
+            <div class="date-input-group">
+                <label for="classDate">Select Date:</label>
+                <input type="date" id="classDate" required>
+            </div>
+
+            <input type="text" id="toolsUsed" placeholder="Class Tools Used" required>
+            <input type="text" id="workDetails" placeholder="Class Work Details" required>
+            <input type="text" id="remarks" placeholder="Remarks">
+            
+            <button type="submit" id="submitBtn">Submit Entry</button>
+        </form>
+
+        <div class="table-container">
+            <table id="toDoTable">
+                <thead>
+                    <tr>
+                        <th>Your Name</th>
+                        <th>Your Polytechnic</th>
+                        <th>Class No.</th>
+                        <th>Class Date</th>
+                        <th>Class Tools Used</th>
+                        <th>Class Work Details</th>
+                        <th>Remarks</th>
+                        <th>Actions</th> 
+                    </tr>
+                </thead>
+                <tbody>
+                    </tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
